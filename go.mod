@@ -1,4 +1,4 @@
-module hyperliquid-go-sdk
+module github.com/funcblock-quant/hyperliquid-go-sdk
 
 go 1.24.0
 
