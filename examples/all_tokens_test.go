@@ -79,26 +79,7 @@ func TestUserFundingHistory(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Failed to fetch user funding history: %v", err)
 	}
-	
-	t.Logf("Total funding history records: %d", len(txs))
-	for i, tx := range txs {
-		if i >= 5 { // 只显示前5条记录
-			break
-		}
-		t.Logf("Funding [%d]: Coin=%s, FundingRate=%s, Szi=%s, Usdc=%s, Hash=%s, Time=%d", 
-			i, tx.Delta.Coin, tx.Delta.FundingRate, tx.Delta.Szi, tx.Delta.Usdc, tx.Hash, tx.Time)
-	}
-	
-	// 如果有数据，显示总的资金费用
-	if len(txs) > 0 {
-		totalFunding := 0.0
-		for _, tx := range txs {
-			if fundingValue, err := strconv.ParseFloat(tx.Delta.Usdc, 64); err == nil {
-				totalFunding += fundingValue
-			}
-		}
-		t.Logf("Total funding amount (USDC): %.8f", totalFunding)
-	}
+	t.Logf("User funding history: %v", txs)
 }
 
 func TestUserPortfolio(t *testing.T) {
