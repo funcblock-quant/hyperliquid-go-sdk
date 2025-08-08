@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	sdk "hyperliquid-go-sdk"
+	sdk "github.com/funcblock-quant/hyperliquid-go-sdk"
 )
 
 func TestOrders(t *testing.T) {

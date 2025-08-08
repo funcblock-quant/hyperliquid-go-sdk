@@ -3,7 +3,7 @@ package examples
 import (
 	"context"
 	"encoding/json"
-	sdk "hyperliquid-go-sdk"
+	sdk "github.com/funcblock-quant/hyperliquid-go-sdk"
 	"sync"
 	"testing"
 	"time"

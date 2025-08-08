@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	sdk "hyperliquid-go-sdk"
+	sdk "github.com/funcblock-quant/hyperliquid-go-sdk"
 )
 
 func TestCandlesSnapshot(t *testing.T) {

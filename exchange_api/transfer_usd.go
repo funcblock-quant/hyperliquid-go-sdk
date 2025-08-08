@@ -2,7 +2,7 @@ package exchange_api
 
 import (
 	"fmt"
-	sdk "hyperliquid-go-sdk"
+	sdk "github.com/funcblock-quant/hyperliquid-go-sdk"
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/signer/core/apitypes"

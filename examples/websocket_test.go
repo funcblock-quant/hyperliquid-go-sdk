@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	sdk "hyperliquid-go-sdk"
+	sdk "github.com/funcblock-quant/hyperliquid-go-sdk"
 )
 
 func TestWebsocket(t *testing.T) {

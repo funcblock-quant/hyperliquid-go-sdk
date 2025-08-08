@@ -8,7 +8,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	sdk "hyperliquid-go-sdk"
+	sdk "github.com/funcblock-quant/hyperliquid-go-sdk"
 )
 
 var (
@@ -49,7 +49,7 @@ func TestMain(m *testing.M) {
 	}
 	// Initialize test exchange
 	testExchange = sdk.NewExchange(sdk.MainnetAPIURL, vaultAddress, meta, testSigner)
-
+	
 	// Run tests
 	code := m.Run()
 	os.Exit(code)

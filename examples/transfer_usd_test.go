@@ -1,7 +1,7 @@
 package examples
 
 import (
-	ex "hyperliquid-go-sdk/exchange_api"
+	ex "github.com/funcblock-quant/hyperliquid-go-sdk/exchange_api"
 	"testing"
 )
 
